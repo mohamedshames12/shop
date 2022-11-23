@@ -1,0 +1,280 @@
+
+.profile{
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    width: 200px;
+    top: 3.5rem;
+    right: -5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: lightgray;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth a{
+    font-size: 1rem;
+    background: #fff;
+    padding: .3rem .5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info #logout{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+}
+
+
+
+.info.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+#user{
+    font-size: 1.5rem;
+    color: #52796f;
+    border: 1px solid transparent;
+    background: #fff;
+    padding: .3rem .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#heart{
+    font-size: 1.5rem;
+    color: #52796f;
+    border: 1px solid transparent;
+    background: #fff;
+    padding: .3rem .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cart{
+    font-size: 1.5rem;
+    color: #52796f;
+    border: 1px solid transparent;
+    background: #fff;
+    padding: .3rem .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.slide .image{
+    flex: 1;
+    text-align: center;
+}
+
+.slide .image img{
+   width: 70%;
+    object-fit: cover;
+}
+
+.slide .content{
+    flex: 1;
+}
+
+.content span{
+    color: #219ebc;
+    font-size: 1.2rem;
+}
+
+.content h3{
+    margin-bottom: 1rem;
+}
+
+.content .btn{
+    padding: .5rem 1rem;
+    background-color: #219ebc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.Toys{
+    text-align: center;
+    color: #2a9d8f;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 2rem 0 ;
+}
+
+.Hottest-Toys{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background: #eee;
+}
+
+
+.Hottest-Toys .wrpper{
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(20rem, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.Hottest-Toys .wrpper .box{
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 5px;
+    height: 310px;
+    background: #fff;
+    
+}
+
+.Hottest-Toys .wrpper .box img{
+    height: 13rem;
+    display: flex;
+    margin: auto;
+}
+
+.Hottest-Toys .wrpper .box h1{
+    font-size: .8rem;
+    width: auto;
+    color: #219ebc;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.Hottest-Toys .wrpper .box p{
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+
+.Fall{
+    text-align: center;
+    color: #2a9d8f;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 2rem 0 ;
+}
+
+.fall-must{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.fall-must .wrapper-full{
+    display: flex;
+    padding: 4rem 0;
+}
+
+.fall-must .wrapper-full .box-full{
+    border: 2px solid lightgray ;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #fff;
+    margin-left: 2.5rem;
+}
+
+
+.fall-must .wrapper-full .box-full img{
+    height: 10rem;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.fall-must .wrapper-full .box-full p{
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    color: #333;
+    font-size: 2rem !important;
+  }
+  
+
+  @media (max-width: 768px) {
+    .slide .image{
+        margin-left: 1.5rem;
+    }
+
+    
+    .slide .content{
+       margin-right: 1.5rem;
+    }
+
+    .Hottest-Toys .wrpper{
+        display: block;
+    }
+
+    .Hottest-Toys .wrpper .box{
+        margin-bottom: 2rem;
+    }
+
+    .fall-must .wrapper-full{
+        display: block;
+        padding: 4rem 0;
+    }
+
+    .fall-must .wrapper-full .box-full{
+        display: block;
+        margin: 2rem auto;
+        
+    }
+    
+  }

@@ -1,0 +1,256 @@
+.about{
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.info-about{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto auto;
+}
+
+
+.info-about .info-me{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-about .info-me h1{
+    margin: .5rem 0;
+    color: #0077b6;
+    text-transform: uppercase;
+}
+
+.info-about .info-me h3{
+    color: #a2a2a2;
+    font-size: 1rem;
+}
+
+
+
+.info-about .image-info{
+    flex: 1;
+}
+
+.info-about .image-info img{
+    height: 40rem;
+    display: flex;
+    margin: auto;
+}
+
+.Brands{
+    text-align: center;
+    padding: 2rem 0;
+    color: #264653;
+}
+
+
+.Popular{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto auto;
+}
+
+.wrppaer-Popular .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.box img{
+    margin-right: 8rem;
+}
+
+
+.info-about-sec{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto auto;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.info-about-sec .info-me{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-about-sec .info-me h1{
+    margin: .5rem 0;
+    color: #0077b6;
+    text-transform: uppercase;
+}
+
+.info-about-sec .info-me h3{
+    color: #a2a2a2;
+    font-size: 1rem;
+}
+
+
+
+.info-about-sec .image-info{
+    flex: 1;
+}
+
+.info-about-sec .image-info img{
+    height: 40rem;
+    display: flex;
+    margin: auto;
+}
+
+.email-shear{
+    text-align: center;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #264653;
+}
+
+.email-sec{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem;
+    align-items: center;
+
+}
+
+
+.wrapper-email{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email{
+    flex: 1;
+}
+
+
+.email input{
+    width: calc(100% - 250px);
+    border: 1px solid #eee;
+    height: 35px;
+    padding: 1rem;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.email button{
+    margin-left: -.3rem;    
+    height: 35px;
+    width: 80px;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    background: #2a9d8f;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.socali-madia{
+    flex: 1;
+}
+
+.socali-madia img{
+    height: 3rem;
+    margin-left: 2rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    .info-about{
+        display: block;
+    }
+
+    .info-about .info-me{
+        padding: 1rem;   
+    }
+
+    .info-about .info-me h1{
+        text-align: center;
+    }
+    
+    .info-about .info-me h3{
+        text-align: center;
+    }
+
+    .info-about .image-info img{
+        height: 20rem;
+    }
+    .Popular{
+        display: block;
+        margin: auto;
+    }
+
+    .wrppaer-Popular .box{
+        display: block;
+    }
+
+
+    .box img{
+        display: block;
+        margin: auto;
+    }
+
+    .info-about-sec{
+        display: block;
+    }
+
+    .info-about-sec .info-me{
+        padding: 1rem;   
+    }
+
+    .info-about-sec .info-me h1{
+        text-align: center;
+    }
+    
+    .info-about-sec .info-me h3{
+        text-align: center;
+    }
+
+    .info-about-sec .image-info img{
+        height: 20rem;
+    }
+
+    .email-sec{
+        padding: 1rem;
+    }
+
+    .wrapper-email{
+        display: block;
+    }
+
+    .email input{
+        width: calc(100% - 100px);
+        border: 1px solid #eee;
+        height: 35px;
+        padding: 1rem;
+        border-radius: 5px 0px 0px 5px;
+    }
+    .email{
+        margin-bottom: 3rem;
+    }
+
+    .socali-madia img{
+        height: 2rem;
+        margin-left: 1.5rem;
+    }
+
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/message.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <title>shop || Message</title>
+  </head>
+  <body>
+    <!-- header  start -->
+
+    <header>
+      <a href="home.html" class="heading">shop</a>
+      <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="message.html">message</a>
+      </nav>
+      <div class="profile">
+        <i class="fa fa-user" id="user"></i>
+        <div class="info">
+          <div class="auth">
+            <a href="#" id="register">Register</a>
+            <a href="#" id="login">login</a>
+          </div>
+          <a href="#" id="logout">Logout</a>
+        </div>
+      </div>
+      
+      <!-- menu -->
+      <i class="fa-solid fa-bars" id="menu"></i>
+    </header>
+
+    <h1 class="message">send a message  <i class="fa fa-message"></i></h1>
+
+    <!-- sec-message -->
+    <section class="sec-message">
+      <div class="wrapper-mes">
+        <div class="box-meg">
+            <h4>this is a wrong message</h4>
+          <div class="full-name">
+            <label for="fname">First Name</label>
+            <input type="text" placeholder="First name" id="fname" />
+            <label for="lname">Last Name</label>
+            <input type="text" placeholder="last name" id="lname" />
+          </div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="enter your email" />
+          <label for="phone">phone</label>
+          <input
+            type="number"
+            min="0"
+            id="phone"
+            placeholder="enter your phone" />
+            <button>send a message</button>
+        </div>
+
+        <div class="box-map">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="500"
+                height="400"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0">
+              </iframe
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fooder start -->
+    <footer class="fooder">
+      <div class="fooder-links">
+        <div class="box-fooder">
+          <h1>quick links</h1>
+          <a href="../index.html"> <img src="" alt="" /> Home</a>
+          <a href="about.html"> <img src="" alt="" /> About</a>
+          <a href="message.html"> <img src="" alt="" /> Message </a>
+          <a href="contact.html"> <img src="" alt="" /> contact</a>
+        </div>
+        <div class="box-fooder">
+          <h1>follow su</h1>
+          <a href="#"> <img src="" alt="" /> facebook</a>
+          <a href="#"> <img src="" alt="" /> instagram</a>
+          <a href="#"> <img src="" alt="" /> linkedin</a>
+          <a href="#"> <img src="" alt="" /> twitter</a>
+        </div>
+        <div class="box-fooder">
+          <h1>contact info</h1>
+          <a href="#"> <img src="" alt="" /> +02 1061242066</a>
+          <a href="#"> <img src="" alt="" /> mohamedhames900@gmail.com</a>
+          <a href="#"> <img src="" alt="" /> mohamedshames@gmail.com</a>
+          <a href="#"> <img src="" alt="" /> Egypt - Cairo - Nesr City</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copy">
+      &copy; copyright @2022 by <span>MR.Mohamed Shams</span> || all rights
+      reserved
+    </div>
+
+    <!-- footer end -->
+    <!-- JS -->
+    <script src="../js/navber.js"></script>
+    <script src="../js/logout.js"></script>
+  </body>
+</html>

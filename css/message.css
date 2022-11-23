@@ -1,0 +1,166 @@
+
+.profile{
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    width: 200px;
+    top: 3.5rem;
+    right: -5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: lightgray;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth a{
+    font-size: 1rem;
+    background: #fff;
+    padding: .3rem .5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info #logout{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+}
+
+.info.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+#user{
+    font-size: 1.5rem;
+    color: #52796f;
+    border: 1px solid transparent;
+    background: #fff;
+    padding: .3rem .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.message{
+    margin-top: 5rem;
+    text-align: center;
+    color: #264653;
+}
+
+.sec-message{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem;
+}
+
+.wrapper-mes{
+    display: flex;
+}
+
+.box-meg{
+    flex: 1;
+    padding: 1rem 5rem ;
+    -webkit-box-shadow: -1px 0px 72px -12px rgba(0,0,0,0.19);
+    -moz-box-shadow: -1px 0px 72px -12px rgba(0,0,0,0.19);
+    box-shadow: -1px 0px 72px -12px rgba(0,0,0,0.19);
+    border-radius: 10px;
+}
+
+.box-meg h4{
+    text-align: center;
+    margin: .3rem 0;
+    border: 1px solid red;
+    text-transform: capitalize;
+    padding: .3rem;
+    background: #fa937a;
+    color: #ff0015;
+    border-radius: 5px;
+    display: none;
+}
+
+
+.box-meg input{
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: .5rem 0;
+}
+
+.box-map{
+    flex: 1;
+   margin-left: 1rem;
+}
+
+button{
+    display: flex;
+    margin: 1rem auto;
+    width: 200px;height: 35px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+    background: #2a9d8f;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+#logout{
+    font-size: 1rem;
+    padding: .3rem 1rem;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+@media (max-width:700px) {
+    .wrapper-mes{
+        display: block;
+    }
+
+    .sec-message{
+        padding: 1rem;
+    }
+    .box-meg{
+        flex: 1;
+        padding: 1rem;
+    }
+
+    iframe{
+        border-radius: 5px;
+        width: auto;
+        margin-top: 2rem;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .box-map{
+        flex: 1;
+       margin-left: 0;
+    }
+    
+}

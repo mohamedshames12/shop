@@ -1,0 +1,184 @@
+.contact{
+    margin-top: 5rem;
+    text-align: center;
+    color: #264653;
+}
+
+.sec-contact{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 0;
+}
+
+.wrapper-contact{
+    display: flex;
+}
+
+
+.box-contact{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-contact h1{
+    font-size: 1.9rem;
+    color: #9b5de5;
+    margin: 1rem 0;
+}
+
+.box-contact p{
+    font-size: 1.2rem;
+    color: #c1c1c1;
+    width: 450px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+
+
+.links a{
+    display: block;
+    margin-bottom: .5rem;
+    color: #264653;
+    font-weight: 600;
+    position: relative;
+}
+
+
+.box-image{
+    flex: 1;
+}
+
+.box-image img{
+    height: 40rem;
+}
+
+/*  */
+
+.sec-email-contact{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 0;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.sec-email-contact h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #9b5de5;
+    font-size: 2rem;
+}
+
+
+.wrapper-contact-email{
+    display: flex;
+}
+
+.box-email-contact{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 2rem;
+    -webkit-box-shadow: -1px 0px 72px -34px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 0px 72px -34px rgba(0,0,0,1);
+    box-shadow: -1px 0px 72px -34px rgba(0,0,0,1);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.box-email-contact .box{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.box-email-contact .box label{
+    color: #e63946;
+}
+
+.box-email-contact .box h2{
+    color: #2a9d8f;
+}
+
+.box-email-contact .box i{
+   display: flex;
+   height: .1px;
+   width: 100%;
+   background-color: #000;
+   margin: 1rem 0;
+}
+
+
+.box-image-contact{
+    flex: 1;
+}
+
+.box-image-contact img{
+    height: 30rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    .sec-contact{
+        padding: 3rem 0;
+    }
+    
+    .wrapper-contact{
+        display: block;
+    }
+
+    .box-contact{
+        padding: 1rem ;
+        margin-bottom: 2rem;
+    }
+
+    .box-contact p{
+        width: auto;
+    }
+    
+
+
+    .box-image img{
+        height: 20rem;
+        display: flex;
+        margin: auto;
+    }
+
+    .box-email-contact .box h2{
+        color: #2a9d8f;
+        font-size: .8rem;
+    }
+
+    .wrapper-contact-email{
+        display: block;
+    }
+
+    .box-email-contact{
+        padding: 1rem;
+        margin: 1rem;
+
+    }
+
+    .box-image-contact img{
+        height: 20rem;
+        display: flex;
+        margin: auto;
+    }
+    
+    
+    
+}

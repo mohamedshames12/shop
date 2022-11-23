@@ -1,0 +1,269 @@
+
+.profile{
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    width: 200px;
+    top: 3.5rem;
+    right: -5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: lightgray;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth a{
+    font-size: 1rem;
+    background: #fff;
+    padding: .3rem .5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info #logout{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+}
+
+.info.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+#user{
+    font-size: 1.5rem;
+    color: #52796f;
+    border: 1px solid transparent;
+    background: #fff;
+    padding: .3rem .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#heart{
+    font-size: 1.5rem;
+    color: #52796f;
+    border: 1px solid transparent;
+    background: #fff;
+    padding: .3rem .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cart{
+    font-size: 1.5rem;
+    color: #52796f;
+    border: 1px solid transparent;
+    background: #fff;
+    padding: .3rem .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cart:hover,
+#heart:hover,
+#user:hover{
+    background: rgb(187, 187, 187);
+}
+
+
+.sec-search{
+    margin-top: 5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    position: relative;
+}
+
+.sec-search .search{
+    border: 1px solid lightgray;
+    width: 50%;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 0 1rem;
+}
+
+.icon{
+    position: absolute;
+    top: 16px;
+    right: 47%;
+}
+
+.icon i{
+    background: #52796f;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 40px;
+    border-radius: 0px 5px 5px 0px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+.products{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.products .wrpper{
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(20rem, 1fr));
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.products .wrpper .box{
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 5px;
+    height: 290px;
+    background: #fff;
+    
+}
+
+.products .wrpper .box img{
+    height: 10rem;
+    display: flex;
+    margin: auto;
+    
+}
+
+.products .wrpper .box h1{
+    font-size: .8rem;
+    width: auto;
+    color: #219ebc;
+    text-align: center;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+.products .wrpper .box p{
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+
+.products .wrpper .box .btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    color: #023047;
+    background: #eee;
+    font-size: 1.1rem;
+    font-weight: 600;   
+    cursor: pointer;
+}
+
+
+.products .wrpper .box .btn:hover{
+    background: #023047;
+    color: #fff;
+}
+
+
+.badge{
+    position: absolute;
+    top: -9px;
+    left: 30px;
+    background: #333;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 11.5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    display: none;
+}
+
+.view-products{
+    position: absolute;
+    border: 1px solid #eee;
+    background: #fff;
+    top: 4rem;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    right: -2rem;
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.view-products p{
+    margin: .5rem 0;
+}
+
+.view-products a{
+    font-size: 13px;
+    background-color: #023047;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.view-products a:hover{
+    background-color: #52796f;
+}
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    .sec-search .search{
+        width: 80%;
+    }
+
+    .icon{
+        position: absolute;
+        top: 16px;
+        right: 15%;
+    }
+
+    .products .wrpper{
+        display: block;
+    }
+
+    .products .wrpper .box{
+        margin-bottom: 2rem;
+    }
+
+
+}
