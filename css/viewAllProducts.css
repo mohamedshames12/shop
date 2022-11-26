@@ -169,15 +169,10 @@
     font-weight: 700;
 }
 
-.two-btns{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem 0;
-}
 
 .products .wrpper .box .btn{
-    width: 49%;
+    margin-top: 1rem;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     color: #023047;
@@ -188,21 +183,6 @@
 }
 
 
-.box i{
-    width: 45%;
-    height: 40px;
-    border-radius: 5px;
-    color: #023047;
-    background: #eee;
-    font-size: 1.1rem;
-    font-weight: 600;   
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 1.4rem;
-}
 
 .box i.active{
     color: red;
@@ -242,12 +222,11 @@
     padding: 10px;
     border-radius: 5px;
     right: -2rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    display: none;
 }
 
-.view-products.active{    
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-
+.active{
+    display: block;
 }
 
 .view-products p{
